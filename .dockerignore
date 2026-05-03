@@ -1,0 +1,43 @@
+.git/
+.gitignore
+
+# Python cache
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/.venv/
+**/*.egg-info/
+
+# Node
+**/node_modules/
+**/dist/
+**/.vite/
+
+# IDE
+.vscode/
+.idea/
+
+# Docs and plans (not needed at runtime)
+docs/
+*.md
+*.docx
+
+# Test files
+**/tests/
+
+# Other build artifacts
+tools/
+artifacts/model_training/
+artifacts/model_stubs_refresh/
+
+# Lock files (only needed for dev)
+projects/*/uv.lock
+
+# Logs
+logs/
+*.log
+
+# Docker files (keep nginx.conf for build)
+.dockerignore
+Dockerfile*
+docker-compose*
